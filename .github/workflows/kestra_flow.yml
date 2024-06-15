@@ -14,18 +14,14 @@ jobs:
         with:
           directory: ./flows/prod
           resource: flow
-          server: ${{secrets.KESTRA_HOST}}
-          user: ${{secrets.KESTRA_USER}}
-          password: ${{secrets.KESTRA_PASSWORD}}
+          server: https://kestra.io/
       - name: deploy-prod
         uses: kestra-io/deploy-action@develop
         with:
           namespace: prod
           directory: ./flows/prod
           resource: flow
-          server: ${{secrets.KESTRA_HOST}}
-          user: ${{secrets.KESTRA_USER}}
-          password: ${{secrets.KESTRA_PASSWORD}}
+          server: https://kestra.io/
           delete: false
       - name: deploy-prod-marketing
         uses: kestra-io/deploy-action@develop
@@ -33,7 +29,5 @@ jobs:
           namespace: prod.marketing
           directory: ./flows/prod.marketing
           resource: flow
-          server: ${{secrets.KESTRA_HOST}}
-          user: ${{secrets.KESTRA_USER}}
-          password: ${{secrets.KESTRA_PASSWORD}}
+          server: https://kestra.io/
           delete: false
