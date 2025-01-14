@@ -36,4 +36,3 @@ docker-compose up -d
 ./gradlew kestra:server
 
 ./gradlew kestra:submit -Pfile=path/to/your/workflow.yaml
-
