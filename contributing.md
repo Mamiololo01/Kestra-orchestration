@@ -1,6 +1,3 @@
-### New `CONTRIBUTING.md`
-
-```markdown
 # Contributing to Kestra Orchestration
 
 We welcome contributions to the Kestra Orchestration project. Whether you're fixing a bug, adding a feature, or improving documentation, your contributions are greatly appreciated.
